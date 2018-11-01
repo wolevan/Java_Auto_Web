@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="28566" started-at="2018-10-31T16:47:00 CST" finished-at="2018-10-31T16:47:28 CST">
+  <suite name="Default Suite" duration-ms="27738" started-at="2018-11-01T09:03:52 CST" finished-at="2018-11-01T09:04:20 CST">
     <groups>
     </groups>
-    <test name="SolutionSelenium" duration-ms="28566" started-at="2018-10-31T16:47:00 CST" finished-at="2018-10-31T16:47:28 CST">
+    <test name="SolutionSelenium" duration-ms="27738" started-at="2018-11-01T09:03:52 CST" finished-at="2018-11-01T09:04:20 CST">
       <class name="TestCase.Yun_Login_Test">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCase.Yun_Login_Test@3c77d488]" name="setUp" is-config="true" duration-ms="4814" started-at="2018-10-31T16:47:06 CST" finished-at="2018-10-31T16:47:11 CST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCase.Yun_Login_Test@3c77d488]" name="setUp" is-config="true" duration-ms="4938" started-at="2018-11-01T09:03:58 CST" finished-at="2018-11-01T09:04:03 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:TestCase.Yun_Login_Test@3c77d488]" name="testLogin" duration-ms="17174" started-at="2018-10-31T16:47:11 CST" finished-at="2018-10-31T16:47:28 CST">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:TestCase.Yun_Login_Test@3c77d488]" name="testLogin" duration-ms="16863" started-at="2018-11-01T09:04:03 CST" finished-at="2018-11-01T09:04:20 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCase.Yun_Login_Test@3c77d488]" name="tearDown" is-config="true" duration-ms="150" started-at="2018-10-31T16:47:28 CST" finished-at="2018-10-31T16:47:28 CST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCase.Yun_Login_Test@3c77d488]" name="tearDown" is-config="true" duration-ms="234" started-at="2018-11-01T09:04:20 CST" finished-at="2018-11-01T09:04:20 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCase.Yun_Login_Test -->
       <class name="TestCase.YunErp_Login_test">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCase.YunErp_Login_test@63376bed]" name="setUp" is-config="true" duration-ms="6069" started-at="2018-10-31T16:47:00 CST" finished-at="2018-10-31T16:47:06 CST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCase.YunErp_Login_test@63376bed]" name="setUp" is-config="true" duration-ms="5389" started-at="2018-11-01T09:03:52 CST" finished-at="2018-11-01T09:03:58 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logintest()[pri:0, instance:TestCase.YunErp_Login_test@63376bed]" name="logintest" duration-ms="242" started-at="2018-10-31T16:47:28 CST" finished-at="2018-10-31T16:47:28 CST">
+        <test-method status="PASS" signature="logintest()[pri:0, instance:TestCase.YunErp_Login_test@63376bed]" name="logintest" duration-ms="222" started-at="2018-11-01T09:04:20 CST" finished-at="2018-11-01T09:04:20 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCase.YunErp_Login_test@63376bed]" name="tearDown" is-config="true" duration-ms="91" started-at="2018-10-31T16:47:28 CST" finished-at="2018-10-31T16:47:28 CST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCase.YunErp_Login_test@63376bed]" name="tearDown" is-config="true" duration-ms="68" started-at="2018-11-01T09:04:20 CST" finished-at="2018-11-01T09:04:20 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
