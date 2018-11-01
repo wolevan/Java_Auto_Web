@@ -13,7 +13,7 @@ public class YunErp_Login_test extends  CaseBase{
     public LoginPro loginPro;
     //构造方法
     public YunErp_Login_test() {
-        //确定运行脚本的为chrome浏览器，并且赋值给当前类的DriverBase
+        //选择chrome浏览器，并且赋值给当前类的DriverBase
         this.driverBase=InitDriver("chrome");
         loginPro=new LoginPro(driverBase);
     }

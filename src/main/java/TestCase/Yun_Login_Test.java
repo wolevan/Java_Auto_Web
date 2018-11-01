@@ -23,7 +23,9 @@ public class Yun_Login_Test extends  CaseBase{
         //确定运行脚本的为chrome浏览器，并且赋值给当前类的DriverBase
         this.driver=InitDriver("chrome");
         loginPro=new LoginPro(driver);
+        //打开网页
         driver.get("http://erp-test.qihaiyun.com");
+        //窗口最大化
         driver.maximize_window();
         //隐式等待10秒
         driver.implicitly_time(10);
@@ -45,12 +47,12 @@ public class Yun_Login_Test extends  CaseBase{
 
         // 打开 Csv文件
         CsvUtility utility = new CsvUtility();
-        Iterable<CSVRecord> csvData =
+        Iterable<CSVRecord> csvData =//传入csv文件路径
                 utility.readCsvFile("F:\\Java_Auto_Web\\src\\main\\resources\\logintest.csv");
 
         // 布尔型 true false
         boolean isFirstLine = true;
-        // 循环每一个行，接下来根据每一行的值（数据），进行测试
+        // 跳过行头，循环每读取每一行
         for (CSVRecord row : csvData) {
             if (isFirstLine) {
                 isFirstLine = false;
@@ -58,7 +60,7 @@ public class Yun_Login_Test extends  CaseBase{
                 // continue的作用
                 // 当前循环到此为止，直接进入下一条循环
             }
-            //获取登录用户和密码
+            //根据列获取登录用户、密码、预期结果、类型
             String account = row.get(0);
             String password = row.get(1);
             String exception = row.get(2);
@@ -71,7 +73,7 @@ public class Yun_Login_Test extends  CaseBase{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
+            //第一种类型
             if (type.equals("1")) {
                 //断言,截图
                 try {
@@ -85,6 +87,7 @@ public class Yun_Login_Test extends  CaseBase{
                     driver.findElement(By.className("el-button")).click();
                 }
                 }
+                //第二种类型
                 else if (type.equals("2")) {
                     //driver.get_screenshot();
                     //断言
@@ -93,13 +96,17 @@ public class Yun_Login_Test extends  CaseBase{
                     driver.findElement(By.xpath("html/body/div[2]/div/div[3]/button")).click();
                     //刷新页面
                     driver.refresh();
-                } else if (type.equals("3")) {
+                }
+                //第三种类型
+                else if (type.equals("3")) {
                     //断言
                     Assert.assertEquals(driver.get_text(By.className("el-message-box__message")),exception);
                     //driver.get_screenshot();
                     driver.findElement(By.xpath("html/body/div[2]/div/div[3]/button")).click();
                     driver.refresh();
-                } else {
+                }
+                //最后一种类型
+                else {
                     //断言
                     Assert.assertEquals(driver.get_text(By.className("el-message-box__message")),exception);
                     //driver.get_screenshot();
