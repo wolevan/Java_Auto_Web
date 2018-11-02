@@ -80,7 +80,7 @@ public class Yun_Login_Test extends  CaseBase{
                     Assert.assertEquals(driver.getUrl(), "http://erp-test.qihaiyun.com/#/home");
 
                 } catch(Exception e){
-                    System.out.println("断言失败，已截图");
+                    System.out.println("断言失败");
                 }
                 finally {
                     //点击退出
@@ -89,7 +89,7 @@ public class Yun_Login_Test extends  CaseBase{
                 }
                 //第二种类型
                 else if (type.equals("2")) {
-                    //driver.get_screenshot();
+                    driver.get_screenshot();
                     //断言
                     Assert.assertEquals(driver.get_text(By.className("el-message-box__message")),exception);
                     //确定
@@ -101,7 +101,7 @@ public class Yun_Login_Test extends  CaseBase{
                 else if (type.equals("3")) {
                     //断言
                     Assert.assertEquals(driver.get_text(By.className("el-message-box__message")),exception);
-                    //driver.get_screenshot();
+                    driver.get_screenshot();
                     driver.findElement(By.xpath("html/body/div[2]/div/div[3]/button")).click();
                     driver.refresh();
                 }
@@ -109,7 +109,7 @@ public class Yun_Login_Test extends  CaseBase{
                 else {
                     //断言
                     Assert.assertEquals(driver.get_text(By.className("el-message-box__message")),exception);
-                    //driver.get_screenshot();
+                    driver.get_screenshot();
                     driver.findElement(By.xpath("html/body/div[2]/div/div[3]/button")).click();
                     driver.refresh();
                 }
